@@ -3,6 +3,7 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 
 class Vehicle extends Model
 {
@@ -18,4 +19,9 @@ class Vehicle extends Model
         'status_vehicle',
         'observation_vehicle',
     ];
+
+    public function sales() : HasMany
+    {
+        return $this->hasMany(Sale::class);   
+    }
 }
