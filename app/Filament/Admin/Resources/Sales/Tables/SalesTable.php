@@ -22,9 +22,9 @@ class SalesTable
                     ->label('CLIENTE')
                     ->searchable()
                     ->sortable(),
-                 TextColumn::make('created_at')
+                 TextColumn::make('date_sale')
                     ->label('DATA DA VENDA')
-                    ->dateTime('d/m/Y H:i'),
+                    ->dateTime('d/m/Y'),
             ])
             ->filters([
                 //

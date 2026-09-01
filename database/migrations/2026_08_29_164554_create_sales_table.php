@@ -22,6 +22,7 @@ return new class extends Migration
                 //não permitirá apagar o registro que possui uma venda relacionada.
                 ->restrictOnDelete();
             $table->decimal('sale_price', 12, 2);
+            $table->date('date_sale');
             $table->text('observation')->nullable();
             $table->timestamps();
         });

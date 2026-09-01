@@ -11,6 +11,7 @@ class Sale extends Model
         'vehicle_id',
         'client_id',
         'sale_price',
+        'date_sale',
         'observation',
     ];
 
