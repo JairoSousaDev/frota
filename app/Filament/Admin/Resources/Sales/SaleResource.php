@@ -22,7 +22,7 @@ class SaleResource extends Resource
 
     protected static ?string $recordTitleAttribute = 'Sale';
 
-        protected static ?string $modelLabel = 'Venda';
+    protected static ?string $modelLabel = 'Venda';
 
     protected static ?string $pluralModelLabel = 'Vendas';
 
